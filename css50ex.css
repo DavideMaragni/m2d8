@@ -1,0 +1,70 @@
+body{
+  width: 1000px;
+  position: absolute;
+ }
+
+ h1{
+   text-align: center;
+   margin: 20px;
+ }
+
+ a{
+   color: greenyellow;
+ }
+
+ .ps51 {
+  height: 80px;
+  width: 150px;
+  margin: 5px;
+ }
+
+ .ps52 {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+ }
+
+ .ps53 {
+  height: 80px;
+  width: 120px;
+  margin: 15px;
+ }
+
+ .prodotto {
+      text-align: center;
+ }
+
+ table{
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px;
+ }
+
+ .list{
+   border: 1px solid blue;
+   margin: 20px;
+ }
+
+ div{
+   margin: 20px;
+ }
+
+ footer{
+   margin: 20px;
+ }
+
+ .font{
+   font-family: Helvetica, Arial, sans-serif
+ }
+
+ .reset{
+   display: none;
+ }
+
+ td{
+   border: 1px solid rgb(17, 182, 17)
+ }
+
+ tr{
+   outline: 1px dotted red;
+ }
