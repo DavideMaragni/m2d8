@@ -112,10 +112,8 @@ const title= document.querySelectorAll('td')
 
 //es33  
 
-
-let tab = document.getElementById("td");
-for (let i = 0; i < title.length; i++) {
-console.log(table.childNodes[i].innerText);
+for (const elem of title) {
+console.log(elem.innerText);
 }
 
 //  es34
@@ -125,22 +123,29 @@ const changeTitle = newTitle => {
  changeTitle('nuovo titolo')
 
  // es35
- const addRiga = function (content) {
+ const addRiga =  () => {
    const newtr= document.createElement('tr');
-   newtr.innerHTML = content;
-
-   const tr = document.getElementsByTagName('table');
-   tr.appendChild(newtr);
+   const tab = document.querySelector('table')
+   tab.appendChild(newtr)
  }
- addRiga('<td>a</td>',
-    '<td>b</td>',
-    '<td>c</td>',
-    '<td>d</td>',
-    '<td>e</td>',
-    
-    )
+
+ //es 36
+ const addClass = () => {
+  const tab = document.querySelectorAll('tr');
+
+  for(const text of tab){
+    elem.classList.add('test');
+  }
+ }
+
  //  es37
+ const addColorRed= (tag) =>{}
  document.getElementById("sfondo").style.background = "red";
+
+ //  es38
+ window.onload = () => {
+  allert('Page loaded!');
+ }
 
  // es39
  const addToTheSecond = function (content) {
@@ -157,3 +162,14 @@ const changeTitle = newTitle => {
  const list = document.getElementById("secondList");
  list.removeChild(list.firstElementChild);
  }
+
+ //Es 41
+ const showAler = () => {
+  const links = document.querySelectorAll('a');
+
+  for(const el of links){
+    el.addEventListener('mouseover', event => {
+    alert(el.href);
+    });
+  }
+}
